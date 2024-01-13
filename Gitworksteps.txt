@@ -1,0 +1,43 @@
+Git work steps: (normal working)
+1. create a normal folder (e.g. mkdir AnyFolderName) 
+2. create a repository on github
+	2.1 add readme (if you want) opt
+	2.2 .gitignore (files which you want to ignore while pushing) opt
+	2.3 .git (history of push in git - logs) auto
+3. go to directory (e.g. cd sample_folder)
+4. inside the directory do : git init
+5. now we have local repository but who don't know which repository from our github account
+6. To add a SPECIFIC REPOSITORY do
+7. git remote add origin <gitLink>
+8. Now we want to push some code to the repository
+9. To push any code we need some code so do : vi <yourfilename.*>
+10. To push any code we need to go through different areas 
+
+local folder ---git add file----> staging/index area ---git commit -m "write a comment"----> local repository ---git push--> finally in the github repository
+
+11. git add file (or if you want to add all the files in the repo do) git add .
+12. git commit -m "comment anything"
+13. git push 
+14. credentials will be asked -> username and password (username will be same as you have set on your account and password will be 'token')
+ 
+Prerequisites: 
+
+git config --global user.name <username>
+git config --global user.email <email>
+
+
+How to get a token?
+1. Go to settings
+2. In that go to Developer settings
+3. set token and duration or expiration
+4. copy the token to a file and save it
+5. use the token instead for password
+
+Extra points: 
+1. git status: will give status of project- which state you are in
+
+When git conflict between main and master
+
+git pull <link>
+git pull origin main --allow-unrelated-histories
+git push --set-upstream origin main

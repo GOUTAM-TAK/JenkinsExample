@@ -1,2 +1,2 @@
 # JenkinsExample
-For jenkins using git
+For jenkins usin git bash
